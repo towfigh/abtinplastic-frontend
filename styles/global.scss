@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// FONTS
+@font-face {
+  font-family: "yekan";
+  font-weight: 400;
+  src: url(../public/fonts/BYekan.ttf);
+}
+
+@font-face {
+  font-family: "estedad";
+  font-weight: 400;
+  src: url(../public/fonts/estedad-fd-regular.woff2);
+}
+
+@font-face {
+  font-family: "estedad";
+  font-weight: 600;
+  src: url(../public/fonts/estedad-fd-semibold.woff2);
+}
+
+@font-face {
+  font-family: "estedad";
+  font-weight: 700;
+  src: url(../public/fonts/estedad-fd-bold.woff2);
+}
+
+@font-face {
+  font-family: "estedad";
+  font-weight: 800;
+  src: url(../public/fonts/estedad-fd-extrabold.woff2);
+}
+
+@font-face {
+  font-family: "estedad";
+  font-weight: 900;
+  src: url(../public/fonts/estedad-fd-black.woff2);
+}
+
+// VARIABLES
+$primary: #ffec40;
+$dark: #393a3c;
+$header-height: 50px;
+
+// MAIN
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+  margin: 0;
+  font-family: estedad;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.font-yekan {
+  font-family: yekan;
+}
+
+.font-estedad {
+  font-family: estedad;
+}
+
+.bg-theme-dark {
+  background-color: $dark;
+}
+
+.bg-logo {
+  background-image: url(../public/img/bg-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@layer utilities {
+  .text-primary {
+    color: $primary;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid rgba(80, 80, 80, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(80, 80, 80, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(80, 80, 80, 0.6);
+}
+
+@import "layout.scss";
+@import "main.scss";
+@import "components.scss";

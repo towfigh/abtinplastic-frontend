@@ -1,0 +1,12 @@
+.header {
+  height: $header-height;
+  ul {
+    li {
+      a {
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
