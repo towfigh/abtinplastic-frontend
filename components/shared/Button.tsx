@@ -20,7 +20,7 @@ const Button = ({
 }: buttonProps) => {
   return (
     <button
-      className={`${className} text-2xl flex mx-auto justify-center items-center gap-x-4 py-2 px-3 font-yekan ${
+      className={`${className} text-2xl flex mx-auto justify-center items-center gap-x-4 py-2 px-3 font-iran-sans ${
         variant === "primary" && "button_primary"
       }  ${variant === "secondary" && "button_secondary"}`}
       style={style}

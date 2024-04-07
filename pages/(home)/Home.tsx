@@ -11,6 +11,7 @@ import quality from "@/public/img/quality.png";
 import variant from "@/public/img/variant.png";
 import abdi from "@/public/img/abdi.png";
 import Certificates from "./components/Certificates";
+import BasketIcon from "@/components/icons/Basket.icon";
 
 const Home = () => {
   return (
@@ -87,6 +88,20 @@ const Home = () => {
         </div>
       </div>
       <Certificates />
+      <div>
+        <h1 className="text-2xl text-center my-10 px-20 leading-11">
+          از طریق سامانه ثبت سفارش آنلاین، محصولات مورد نظر خود را انتخاب کنید
+          تا در اسرع وقت نسبت به ارسال سفارش شما اقدام شود :
+        </h1>
+        <div className="text-center my-10">
+          <Button
+            title="ثبت سفارش آنلاین"
+            variant="primary"
+            className="shadow-lg shadow-yellow-300 py-4 px-10"
+            icon={<BasketIcon fill="#ffec40" />}
+          />
+        </div>
+      </div>
     </MainLayout>
   );
 };

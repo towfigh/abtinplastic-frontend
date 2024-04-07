@@ -10,6 +10,12 @@
 }
 
 @font-face {
+  font-family: "iran-sans";
+  font-weight: 400;
+  src: url(../public/fonts/iran-sans.woff2);
+}
+
+@font-face {
   font-family: "estedad";
   font-weight: 400;
   src: url(../public/fonts/estedad-fd-regular.woff2);
@@ -71,6 +77,10 @@ a {
   font-family: yekan;
 }
 
+.font-iran-sans {
+  font-family: estedad;
+}
+
 .font-estedad {
   font-family: estedad;
 }
@@ -82,7 +92,7 @@ a {
 .bg-logo {
   background-image: url(../public/img/bg-logo.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
